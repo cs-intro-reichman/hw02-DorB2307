@@ -9,11 +9,16 @@ public class Perfect {
 		for (int i = 1; i < N; i++) {
 			if (N % i == 0) {
 				sum += i;
-				str += i + " + ";
+				if (i != N / 2) {
+					str += i + " + ";
+				}
+				else {
+					str += i;
+				}
 			}
 		}
 		if (sum == N) {
-			System.out.println(str.substring(0, str.length() - 2));
+			System.out.println(str);
 		}
 		else {
 			System.out.println(N + " is not a perfect number");

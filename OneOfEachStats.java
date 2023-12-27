@@ -30,8 +30,8 @@ public class OneOfEachStats {
 			}
 			sum += count;
 			if (count == 2) count2 += 1;
-			if (count == 3) count3 += 1;
-			if (count >= 4) count4 += 1;
+			else if (count == 3) count3 += 1;
+			else count4 += 1;
 		}
 		System.out.println("Average: " +  sum / T + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + count2);
