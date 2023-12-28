@@ -21,7 +21,7 @@ public class OneOfEachStats {
 			int count = 0;
 			while (!boy || !girl) {
 				count += 1;
-				if ((int)(Math.round(generator.nextDouble())) == 0) {
+				if (generator.nextDouble() > 0.5) {
 					boy = true;
 				}
 				else {
